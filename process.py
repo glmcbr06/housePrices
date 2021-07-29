@@ -33,6 +33,11 @@ def get_adjRsq(X: pd.DataFrame, y: pd.Series, rSq):
     adjRsq = 1 - (1 - rSq) * (n - 1) / (n - p - 1)
     return adjRsq
 
+
+def normalize(x, mean, stdev):
+    z = (x - mean) / stdev
+    return z
+
 # def get_sale_class_percent(cls: pd.Series):
 #     tmp = {}
 #     for c in cls.unique():

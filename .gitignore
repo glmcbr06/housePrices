@@ -1,5 +1,4 @@
 .idea
-test.csv
-train.csv
-trainingStatsData.csv
+/*.csv
+/*.png
 __pycache__/
